@@ -7,29 +7,17 @@
 )
 
 #set page(
-  paper: "a4",
-  margin: (x: 2.5cm, y: 2.5cm),
-  numbering: "1 / 1",
-  number-align: center,
+  numbering: "1",
 )
 
 #set text(
-  font: ("New Computer Modern", "Libertinus Serif"),
-  size: 11pt,
   lang: "id",
-  hyphenate: true,
 )
 
-#set par(justify: true, leading: 0.76em, spacing: 0.8em)
-#set list(indent: 1.1em, spacing: 0.4em)
-#set enum(indent: 1.4em, spacing: 0.4em)
-
+#set par(justify: true)
 #set heading(numbering: "1.")
-#show heading.where(level: 1): set text(size: 13pt, weight: "bold")
-#show heading.where(level: 1): set block(above: 1.8em, below: 0.9em)
 
-#show raw: set text(font: "DejaVu Sans Mono", size: 9pt)
-#show raw.where(block: false): set text(size: 0.8em)
+#show raw: set text(font: "DejaVu Sans Mono")
 #show raw.where(block: true): set block(
   fill: luma(246),
   stroke: 0.5pt + luma(200),
@@ -38,22 +26,7 @@
   width: 100%,
 )
 
-#set figure(gap: 0.7em)
-#show figure.caption: set text(size: 9.5pt)
-#show figure.caption: set par(justify: false)
-#show figure.caption: set align(center)
-#show figure.where(kind: table): set figure.caption(position: top)
-
-#let note(body) = block(
-  width: 100%,
-  fill: luma(247),
-  stroke: (left: 3pt + luma(120)),
-  inset: (x: 12pt, y: 8pt),
-  radius: (right: 3pt),
-  above: 1em,
-  below: 1.2em,
-  body,
-)
+#show figure.caption: set text(size: 9pt)
 
 // ---------------------------------------------------------------- judul
 
